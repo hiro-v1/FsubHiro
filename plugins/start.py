@@ -118,7 +118,7 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("😊 About Me", callback_data = "about"),
+                    InlineKeyboardButton("😊 Saya adalah bot Fsub hubungi @hiro_v1 untuk info", callback_data = "about"),
                     InlineKeyboardButton("🔒 Close", callback_data = "close")
                 ]
             ]
@@ -156,7 +156,7 @@ async def start_command(client: Client, message: Message):
 
 WAIT_MSG = """"<b>Processing ...</b>"""
 
-REPLY_ERROR = """<code>Use this command as a replay to any telegram message with out any spaces.</code>"""
+REPLY_ERROR = """<code>Gunakan perintah ini sebagai reply pesan telegram apa pun tanpa spasi.</code>"""
 
 #=====================================================================================##
 
@@ -185,7 +185,7 @@ async def not_joined(client: Client, message: Message):
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = 'Try Again',
+                    text = 'coba lagi',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
