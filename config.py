@@ -47,7 +47,7 @@ except ValueError:
 Daftar Admin Anda tidak berisi bilangan bulat yang valid.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>Anda harus bergabung di Saluran/Grup saya untuk menggunakan saya\n\nSilakan bergabung dengan Channel</b>")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>Anda harus bergabung di Channel/Grup saya untuk menggunakan saya\n\nSilakan bergabung dengan Channel</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
